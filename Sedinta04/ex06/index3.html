@@ -26,10 +26,21 @@
     age: 29
   }]
 };
-var skillsl= person.skills.length;
-for (var i = 0; i < skillsl; i++) {
-  console.log(person.skills[i]);
+
+var prieteni= person.friends.length;
+var rezultat= 'Prietenii mei se numesc:' ;
+console.log (prieteni);
+for (var i = 0; i < prieteni; i++) {
+    if (i < prieteni-1)
+  rezultat  += person.friends[i].name + ' ' + person.friends[i].surname + ', ';
+  else {
+  rezultat += person.friends[i].name + ' ' + person.friends[i].surname + '. ';
+
+  }
 }
+
+console.log ( rezultat );
+
 
 </script>
 </body>

@@ -27,10 +27,12 @@
   }]
 };
 var skillsl= person.skills.length;
-for (var i = 0; i < skillsl; i++) {
-  console.log(person.skills[i]);
-}
 
+for (var i = 0; i < skillsl; i++) {
+  if (!person.skills[i].startsWith('j')) {
+    console.log(person.skills[i]);
+  }
+}
 </script>
 </body>
 </html>
