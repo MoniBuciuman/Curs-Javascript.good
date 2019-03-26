@@ -24,18 +24,19 @@
     name: 'Carol',
     surname: 'Carolson',
     age: 29
-  }]
+  } ]
 };
-
 var length= person.friends.length;
-var rezultat= '';
-var AgeDragos = person.age;
-var sum= 0
-for (var i = 0; i < length; i++) {
-  sum = person.age - person.friends[i].age;
-  rezultat += 'Intre ' + person.name + ' si ' + person.friends[i].name + ' este o diferenta de ' + sum + ' ani.'
+sum = 0;
+if ( length <= 1) {
+  console.log ( 'Nu am prieten' )
+}else if ( length === 2) {
+  console.log ( 'Am 1 prieten.' )
+} else {
+  for (var i = 0; i < length; i++) {
+    console.log ( 'Am ' + length + ' prieteni.' )
+  }
 }
-console.log ( rezultat)
 
 </script>
 </body>
