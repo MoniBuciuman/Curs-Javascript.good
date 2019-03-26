@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>For</title>
+</head>
+<body>
+<script>
+ var person = {
+  name: 'Dragos',
+  surname: 'Iordache',
+  age: 32,
+  petOwner: false,
+  skills: ['html', 'javascript', 'css', 'java', 'c++', 'node', 'jquery'],
+  friends: [{
+    name: 'Larry',
+    surname: 'Larryson',
+    age: 30
+  }, {
+    name:'Steven',
+    surname: 'Stevenson',
+    age: 31
+  }, {
+    name: 'Carol',
+    surname: 'Carolson',
+    age: 29
+  }]
+};
+var skillsl= person.skills.length;
+for (var i = 0; i < skillsl; i++) {
+  console.log(person.skills[i]);
+}
+for (var i = 0; i < skillsl; i++) {
+  if (!person.skills[i].startsWith('j')) {
+    console.log(person.skills[i]);
+  }
+}
+
+var prieteni= person.friends.length;
+var rezultat= 'Prietenii mei se numesc:' ;
+for (var j = 0; j < prieteni; j++) {
+  rezultat += person.friends[j].name + ' ' + person.friends[j].surname + ', ';
+}
+console.log ( rezultat );
+
+
+</script>
+</body>
+</html>
