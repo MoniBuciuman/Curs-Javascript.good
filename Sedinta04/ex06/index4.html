@@ -27,12 +27,13 @@
   }]
 };
 
-var prieteni= person.friends.length;
-var rezultat= 'Prietenii mei se numesc:' ;
-for (var j = 0; j < prieteni; j++) {
-  rezultat += person.friends[j].name + ' ' + person.friends[j].surname + ', ';
+var length= person.friends.length;
+var rezultat= 'Numarul total de ani este:';
+var sum= 0
+for (var i = 0; i < length; i++) {
+  sum += person.friends[i].age;
 }
-console.log ( rezultat );
+console.log ( rezultat + sum );
 
 
 </script>
