@@ -20,9 +20,13 @@ var person = {
     age: 10
   }]
 };
-var length = pets.age.length;
-var total = 0;
+var length= person.pets.length;
+
+var today= new Date();
+var yyyy = today.getFullYear();
+var AgeDragos = yyyy - person.birthYear;
+var sum= 0
 for (var i = 0; i < length; i++) {
-total += total[i]
+  sum = AgeDragos - person.pets[i].age;
+  console.log ('Intre ' + person.firstName + ' si ' + person.pets[i].name + ' este o diferenta de ' + sum + ' ani.');
 }
-console.log ( 'Suma anilor animalelor este egala cu ' + total );
