@@ -1,7 +1,7 @@
 var person = {
   firstName: 'Dragos',
   lastName: 'Iordache',
-  birthYear: 1987, 
+  birthYear: 1987,
   pets: [{
     name: 'Twix',
     species: 'papagal',
@@ -9,7 +9,7 @@ var person = {
   }, {
     name: 'Mars',
     species: 'caine',
-    age: 2, 
+    age: 2,
   }, {
     name: 'Bounty',
     species: 'hamster',
@@ -20,3 +20,9 @@ var person = {
     age: 10
   }]
 };
+var length = pets.age.length;
+var total = 0;
+for (var i = 0; i < length; i++) {
+total += total[i]
+}
+console.log ( 'Suma anilor animalelor este egala cu ' + total );
