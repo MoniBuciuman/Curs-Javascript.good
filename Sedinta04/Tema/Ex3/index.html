@@ -30,18 +30,24 @@
 var length= person.friends.length;
 
 var AgeDragos = person.age;
-var sum= 0
+var sum= 0,
+  text = '';
+
 for (var i = 0; i < length; i++) {
     for (var j = 0; j < length; j++) {
-    if(i != j ){
-      sum = person.friends[i].age - person.friends[j].age;
-      if (sum > 1)
-      console.log ( 'Intre ' + person.friends[i].name + ' si ' + person.friends[j].name + ' este o diferenta de ' + sum + ' ani.' )
-      if (sum === 1)
-      console.log ( 'Intre ' + person.friends[i].name + ' si ' + person.friends[j].name + ' este o diferenta de ' + sum + ' an.' )
+      if (i != j ) {
+        sum = Math.abs(person.friends[i].age - person.friends[j].age);
+        var text = 'Intre ' + person.friends[i].name + ' si ' + person.friends[j].name + ' este o diferenta de ' + sum;
+        if (sum > 1) {
+          text += ' ani.';
+        }
+        if (sum === 1) {
+          text += ' an.';
+        }
 
+        console.log(text);
+      }
 
-    }
   }
 }
 
